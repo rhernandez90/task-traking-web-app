@@ -13,6 +13,9 @@ import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './account/login/login.component';
+import { BaseComponentComponent } from './base-component/base-component.component';
+import { LoginService } from '../services/login/login.service';
+import { TokenStorageService } from '../services/login/TokenStorage/token-storage.service';
 
 
 @NgModule({
@@ -29,10 +32,11 @@ import { LoginComponent } from './account/login/login.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginComponent
+    LoginComponent,
+    BaseComponentComponent
 
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
